@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-Pepito multiplicacion 
-=======
-Juanita  multiplicacion
->>>>>>> a5119f8cd6b9414f565fe96a99fc6f2475553af3
+Pepito  multiplicacion
+
