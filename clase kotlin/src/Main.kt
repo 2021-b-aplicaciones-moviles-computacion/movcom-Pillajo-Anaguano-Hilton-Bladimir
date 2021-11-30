@@ -89,6 +89,68 @@ fun main() {
 
     val respuestamapDos = arreglodinamico.map { it + 15 }
     println(respuestamapDos)
+
+    // Filter -> Filtrar el arreglo
+    // 1) devuelve una expresion (true o false)
+    // 2) nuevo arreglo filtrado
+
+    val respuestafilter: List<Int> = arreglodinamico
+        .filter { valoractual: Int ->
+            val mayoresacienco: Boolean = valoractual > 5 //expresion condicion
+            return@filter mayoresacienco
+        }
+    val respuestafilterDos = arreglodinamico.filter { it <= 5 }
+    println(respuestafilter)
+    println(respuestafilterDos)
+
+    //Operador OR AND
+    //OR -> ANY (alguno cumple
+    // AND -> ALL (todos cumplen
+
+    val respuestaAny: Boolean = arreglodinamico
+        .any{ valoractual: Int ->
+            return@any (valoractual > 5)
+        }
+    println(respuestaAny) // true
+
+    val respuestaAll: Boolean = arreglodinamico
+        .all{ valoractual: Int ->
+            return@all (valoractual > 5)
+        }
+    println(respuestaAll) // false
+
+    //REDUCE -> valor acumulado
+    //valor acumulado = 0 ( siempre 0 en lenguaje kotlin)
+    // suma todos los valores del arreglo
+
+    val respuestareduce: Int = arreglodinamico
+        .reduce{
+            acumulado: Int, valoractual: Int ->
+            return@reduce (acumulado + valoractual) // logica de negocio
+        }
+    println(respuestareduce) // 78
+
+    //100
+    // [12,15,8,10]
+    val arreglodanio = arrayListOf<Int>(12,15,8,10)
+    val respuestareducefold = arreglodanio
+        .fold(
+            100, //acumulado inicial
+            {acumulado, valoractualiteracion ->
+                return@fold acumulado - valoractualiteracion
+            }
+        )
+    println(respuestareducefold)
+
+    val vidaactual: Double = arreglodinamico
+        .map { it * 2.3 } //arreglo
+        .filter { it > 20 } // arreglo
+        .fold(100.00, { acc, i -> acc - i}) //valor
+        .also { println(it) }//ejecutar codigo extra
+    println("Vlor actual de vida ${vidaactual}")//3.4
+
+
+
 }
 
 fun imprimirNombre(nombre: String): Unit {
@@ -106,3 +168,46 @@ fun calcularsueldo(
         return sueldo * (100/tasa) + bonoespecial
     }
 }
+
+abstract class numerosjava{
+    protected val numerouno: Int //propiedad de la clase
+    private val numerodos: Int //propiedad de la clase
+    constructor(
+        uno: Int, //parametros requeridos
+        dos: Int, //parametros requeridos
+    ){
+        numerouno = uno
+        numerodos = dos
+        println("inicializar")
+    }
+}
+
+abstract class numeros(
+    //constructor primario
+    protected var numerouno: Int,//propiedad de la clase
+    protected var numerodos: Int,//propiedad de la clase
+){
+    init{//bloque de inicio del constructor primario
+        println("Inicializar")
+    }
+}
+
+class Suma(
+    //Cnstructor primario
+    uno: Int, //parametro requerido
+    dos: Int, //parametro requerido
+): Numeros(uno, dos){
+    init {//es el bloque del codigo del constructor primario
+        this.numeroUno
+        this.numeroDos
+        // x -> this.uno -> NO EXISTE
+        // x -> this.dos -> NO EXISTE
+    }
+
+    //public  fun sumar(): Int{
+    fun sumar(): Init{
+        // val total: Int = this.numeroUno + this.numeroDos
+        val total: Int = numeroUno + numeroDos //en kotlin no es necesario el uso de la palabra reservada this, ya que el
+        // lenguaje entiende que se esta trabajando dentro de una clase
+        return  total
+    }
