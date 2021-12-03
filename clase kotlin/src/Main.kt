@@ -193,21 +193,52 @@ abstract class numeros(
 }
 
 class Suma(
-    //Cnstructor primario
     uno: Int, //parametro requerido
     dos: Int, //parametro requerido
-): Numeros(uno, dos){
-    init {//es el bloque del codigo del constructor primario
-        this.numeroUno
-        this.numeroDos
-        // x -> this.uno -> NO EXISTE
-        // x -> this.dos -> NO EXISTE
+): numero(uno, dos){
+    init {
+        this.numeroUno,
+        this.numeroDos,
     }
-
-    //public  fun sumar(): Int{
-    fun sumar(): Init{
+    constructor( //segundo constructor
+        uno: Int?,
+        dos: Int
+    ): this(
+        if(uno == null) 0 else uno,
+        dos
+    )
+    constructor( //tercer constructor
+        uno: Int,
+        dos: Int?
+    ): this(
+        uno,
+        if(dos == null) 0 else dos,
+    )
+    constructor(// tercer constructor
+        uno: Int?,
+        dos: Int?
+    ): this(
+        if(uno==null) 0 else uno,
+        if(dos==null) 0 else dos,
+        )
+    fun sumar(): Int{
         // val total: Int = this.numeroUno + this.numeroDos
         val total: Int = numeroUno + numeroDos //en kotlin no es necesario el uso de la palabra reservada this, ya que el
-        // lenguaje entiende que se esta trabajando dentro de una clase
+        // lenguaje entiende que se esta trabajndo dentro de una clase
+        agregarHistrial(total)
         return  total
     }
+    //USO DE SINGLETON
+    companion object {
+        val pi = 3.14
+        val historialsuma = arrayListOf<Int>()
+        fun agregarHistrial(valornuevasuma: Int){
+            historialsuma.add(valornuevasuma)
+        }
+    }
+
+
+    }
+
+
+
