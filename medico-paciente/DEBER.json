@@ -1,0 +1,18 @@
+[
+  {
+    "ruc": "3456789",
+    "nombre": "Daniela",
+    "telefono": 9765432,
+    "fechanacimiento": "12/12/2000",
+    "consulta": 67.9,
+    "pacientes": [
+      {
+        "cedula": "1234567",
+        "nombre": "Gloria",
+        "telefono": "0987654312",
+        "fechaNacimiento": "10/01/1999",
+        "pacientefrecuente": true
+      }
+    ]
+  }
+]
