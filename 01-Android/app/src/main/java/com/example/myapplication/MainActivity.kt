@@ -11,6 +11,13 @@ class MainActivity : AppCompatActivity() {
     }
     val botonIntent = findViewById<Button>(R.id.btn_intent)
     botonIntent.setOnClicKListener{
-        abrirActividadConParametros()
+        abrirActividadConParametros(CIntentExplicitoParametros::class.java)
     }
+    fun abrirActividadConParametros(
+        clase: Class<*>
+    ){
+        val intentoExpicito =  Intent(this, clase)
+
+    }
+
 }
