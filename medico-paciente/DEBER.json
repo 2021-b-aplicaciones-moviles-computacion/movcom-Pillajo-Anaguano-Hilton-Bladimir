@@ -1,16 +1,16 @@
 [
   {
-    "ruc": "12345678",
-    "nombre": "Alex",
-    "telefono": 11111111,
-    "fechanacimiento": "12/12/1988",
-    "consulta": 13.5,
+    "ruc": "12345",
+    "nombre": "Daniela",
+    "telefono": 111111,
+    "fechanacimiento": "12/12/1999",
+    "consulta": 14.5,
     "pacientes": [
       {
-        "cedula": "12322321",
-        "nombre": "Milton",
-        "telefono": "2222222",
-        "fechaNacimiento": "12/01/1980",
+        "cedula": "232323",
+        "nombre": "Patricia",
+        "telefono": "0987878",
+        "fechaNacimiento": "12/01/2000",
         "pacientefrecuente": false
       }
     ]
