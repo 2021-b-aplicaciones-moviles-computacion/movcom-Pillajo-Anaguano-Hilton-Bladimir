@@ -59,10 +59,10 @@ fun editarPaciente(
     medicos: MutableList<Medico>
 ): MutableList<Medico> {
     val indices = buscarYRetornarIndices(cedula, medicos)
-    val existeMedico = indices["Medico"]!! > -1
+    val existeMedico = indices["medico"]!! > -1
     if (existeMedico) {
-        val indMedico = indices["Medico"] as Int
-        val indPaciente = indices["Paciente"] as Int
+        val indMedico = indices["medico"] as Int
+        val indPaciente = indices["paciente"] as Int
         when (campoAEditar) {
             "telefono" -> {
                 medicos[indMedico].pacientes?.get(indPaciente)?.telefono = nuevoValor
@@ -95,12 +95,12 @@ fun eliminarPaciente(
     medicos: MutableList<Medico>
 ): MutableList<Medico> {
     val indices = buscarYRetornarIndices(cedula, medicos)
-    val existeMedico = indices["Medico"]!! > -1
-    val existePaciente = indices["Paciente"]!! > -1
+    val existeMedico = indices["medico"]!! > -1
+    val existePaciente = indices["paciente"]!! > -1
 
     if (existeMedico && existePaciente) {
-        val indMedico = indices["Medico"] as Int
-        val indPaciente = indices["Paciente"] as Int
+        val indMedico = indices["medico"] as Int
+        val indPaciente = indices["paciente"] as Int
         medicos[indMedico].pacientes?.removeAt(indPaciente)
     }
     return medicos

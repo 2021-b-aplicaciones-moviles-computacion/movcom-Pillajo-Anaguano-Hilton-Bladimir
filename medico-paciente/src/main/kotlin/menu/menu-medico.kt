@@ -63,7 +63,7 @@ fun buscarMedico() {
             menuRespuesta += "-------------------------------------------------\n" +
                     "Nombre: ${empresa?.nombre}\n" +
                     "Fecha Nacimiento: ${empresa?.fechanacimiento}\n" +
-                    "Numero de empleados: ${empresa?.pacientes?.size}\n"
+                    "Numero de Pacientes: ${empresa?.pacientes?.size}\n"
         }
         menuRespuesta += "-------------------------------------------------\n"
         JOptionPane.showMessageDialog(null, menuRespuesta)

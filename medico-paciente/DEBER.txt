@@ -1,8 +1,8 @@
 [
   {
-    "ruc": "3456789",
+    "ruc": "123456789",
     "nombre": "Daniela",
-    "telefono": 9765432,
+    "telefono": 912346288,
     "fechanacimiento": "12/12/2000",
     "consulta": 67.9,
     "pacientes": [
