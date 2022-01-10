@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_editar_medico"
+        android:title="Editar" />
+    <item
+        android:id="@+id/mi_eliminar_medico"
+        android:title="Eliminar" />
+    <item
+        android:id="@+id/mi_verPacientes"
+        android:title="Ver Paciente" />
+
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearMedico">
+
+    <EditText
+        android:id="@+id/txt_consultamedico"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="62dp"
+        android:hint="Costo Consulta"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registrarmedico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_telefonomedico"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_telefonomedico"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="105dp"
+        android:hint="Telefono"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txt_consultamedico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombremedico"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_nombremedico"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="105dp"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txt_telefonomedico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_idmedico"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txt_idmedico"
+        android:layout_width="268dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="4dp"
+        android:hint="Id"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txt_nombremedico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registro"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_registrarmedico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_telefonomedico"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="172dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="180dp"
+        android:background="#E4A1A1"
+        android:text="Registro Médico "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
