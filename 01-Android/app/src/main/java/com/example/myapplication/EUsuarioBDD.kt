@@ -1,8 +1,8 @@
 package com.example.myapplication
 
-class EUsuarioBDD (
+class EUsuarioBDD(
     var id: Int,
     var nombre: String,
     var descripcion: String
-    ){
+)  {
 }
