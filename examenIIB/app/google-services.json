@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "535580680802",
+    "project_id": "examen-iib-firebase",
+    "storage_bucket": "examen-iib-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535580680802:android:2c631b145962218662673b",
+        "android_client_info": {
+          "package_name": "com.example.medicopaciente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535580680802-cs9a5vn1m976ugpd9j8rbn51m4pkfao6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByBKMdrOd9uz_PTcc_3Xk4go5jVbDYDQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535580680802-cs9a5vn1m976ugpd9j8rbn51m4pkfao6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
